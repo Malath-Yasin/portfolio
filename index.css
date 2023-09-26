@@ -1,0 +1,142 @@
+body {
+    background: linear-gradient(to right, pink 0%, pink 10%, white 100%);
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+}
+
+.greenText{
+    color: rgb(15, 82, 15);
+
+}
+.hero{
+    text-align: center;
+     font-weight:bold;
+     font-size: 90px;
+}
+
+.navclass{
+
+    background-color: rgba(167, 189, 167, 0.3);
+
+}
+.cardClass{
+    border: 3px solid pink;
+}
+.cardClass:hover{
+    border: 4px solid  rgb(15, 82, 15);
+}
+.btnCard{
+    background-color: rgb(15, 82, 15);
+    color:white;
+    margin-left: 110px;
+    border-radius: 50px;
+}
+.btnCard:hover{
+    background-color:  rgb(90, 126, 90);
+    color:white;
+    border-radius: 50px;
+}
+.showMoreProjects{
+    background-color: pink;
+     margin-left: 80%;
+    color: rgb(15, 82, 15);
+}
+.showMoreProjects:hover{
+    border: 7px solid  pink;
+    color: rgb(15, 82, 15);
+}
+
+.skills{
+    background-color:rgb(115, 170, 115) ;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 30px;
+    text-align: center;
+     margin-left: 60px;
+    border-radius: 20px;
+    transition: color border;
+    height: 100px; width: 100px;
+    box-shadow: 2px 4px 3px rgb(88, 87, 87);
+    
+}
+.skills:nth-child(odd){
+    margin-top: 50px;
+    background-color:rgb(115, 170, 115) ;
+    color: black;
+    font-size: 20px;
+    margin-top: 70px; 
+    padding-block: 30px;
+    border-radius: 20px;
+    transition: color border;
+    height: 100px;
+    text-align: center;
+    box-shadow: 2px 6px 3px rgb(88, 87, 87);
+}
+.skills:hover{
+    background-color:rgb(28, 87, 28) ;
+    color: white;
+    border: 5px solid rgb(15, 82, 15);
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-block: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 6px 3px rgb(88, 87, 87);
+}
+.star{
+    animation : starSize 1s infinite;
+}
+@keyframes starSize{
+    
+    50%{font-size: 63px;}
+    75%{font-size: 60px;}
+    100%{font-size: 63px;}
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        font-size: 60px;
+    }
+
+    .star {
+        font-size: 30px;
+    }
+
+    .hero-s {
+        font-size: 30px;
+    }
+
+    .btnCard {
+        margin-left: 20px;
+    }
+
+    .showMoreProjects {
+        margin-left: 70%;
+    }
+
+    .skills-container {
+        margin-top: 10px;
+    }
+
+    .skills {
+        font-size: 16px;
+        padding: 10px;
+        width: 45%;
+    }
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  
+    .cardClass {
+        width: 100%; /* Set the card width to 100% */
+        margin-bottom: 20px; /* Add some space between stacked cards */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically */
+    }
+}
